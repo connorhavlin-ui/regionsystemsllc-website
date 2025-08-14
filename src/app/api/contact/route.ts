@@ -138,8 +138,8 @@ export async function POST(request: NextRequest) {
           </div>
           
           <p style="color: #374151; font-size: 16px; line-height: 1.6;">
-            In the meantime, feel free to explore our <a href="https://regionsystems.com/services" style="color: #3b82f6;">services</a> 
-            or learn more <a href="https://regionsystems.com/about" style="color: #3b82f6;">about our team</a>.
+            In the meantime, feel free to explore our <a href="https://regionsystemsllc.com/services" style="color: #3b82f6;">services</a> 
+            or learn more <a href="https://regionsystemsllc.com/about" style="color: #3b82f6;">about our team</a>.
           </p>
           
           <p style="color: #374151; font-size: 16px; line-height: 1.6;">
@@ -156,8 +156,8 @@ export async function POST(request: NextRequest) {
           
           <div style="border-top: 1px solid #475569; padding-top: 15px;">
             <p style="color: #94a3b8; margin: 0; font-size: 14px; text-align: center;">
-              📧 regionsys.auto@gmail.com | 📞 (219) 510-3566<br>
-              🌐 regionsystems.com
+              📧 hello@regionsystemsllc.com | 📞 (219) 510-3566<br>
+              🌐 regionsystemsllc.com
             </p>
           </div>
         </div>
@@ -166,15 +166,15 @@ export async function POST(request: NextRequest) {
 
     // Send email to business
     await transporter.sendMail({
-      from: process.env.SMTP_FROM || '"Region Systems LLC" <noreply@regionsystems.com>',
-      to: process.env.CONTACT_EMAIL || 'regionsys.auto@gmail.com',
+      from: process.env.SMTP_FROM || '"Region Systems LLC" <hello@regionsystemsllc.com>',
+      to: process.env.CONTACT_EMAIL || 'hello@regionsystemsllc.com',
       subject: `New Contact Form Submission - ${service || 'General Inquiry'}`,
       html: businessEmailContent,
     })
 
     // Send auto-reply to customer
     await transporter.sendMail({
-      from: process.env.SMTP_FROM || '"Region Systems LLC" <noreply@regionsystems.com>',
+      from: process.env.SMTP_FROM || '"Region Systems LLC" <noreply@regionsystemsllc.com>',
       to: email,
       subject: 'Thank you for contacting Region Systems LLC',
       html: customerEmailContent,

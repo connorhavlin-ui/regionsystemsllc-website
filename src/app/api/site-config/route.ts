@@ -15,7 +15,7 @@ export async function GET() {
         logoUrl: '/logo.png',
         primaryColor: '#0f172a',
         accentColor: '#2563eb',
-        contactEmail: 'regionsys.auto@gmail.com'
+        contactEmail: 'hello@regionsystemsllc.com'
     })
 }
 

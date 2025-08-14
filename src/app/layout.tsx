@@ -8,10 +8,10 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://regionsystemsllc.com'),
-    title: 'Region Systems LLC - AI Consulting & Automation Integration',
-    description: 'Region Systems LLC delivers AI consulting and automation integration tailored to your operations. Practical, efficient solutions built for real business outcomes.',
-    keywords: 'AI consulting, automation integration, machine learning, artificial intelligence, business automation, digital transformation',
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://regionsystemsllc.com'),
+    title: 'Region Systems LLC — AI & Automation for Indiana SMBs',
+    description: 'Indiana-based AI and automation for small and mid-sized businesses. Save hours, cut errors, and speed up response times with practical systems built around your workflows.',
+    keywords: 'Indiana AI, Indiana automation, small business automation, SMB AI, West Lafayette, Indianapolis, Fort Wayne, Bloomington, Northwest Indiana',
     authors: [{ name: 'Region Systems LLC' }],
     creator: 'Region Systems LLC',
     publisher: 'Region Systems LLC',
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://regionsystems.com',
-        title: 'Region Systems LLC - AI Consulting & Automation Integration',
-        description: 'AI consulting and automation integration for growing businesses. Built for impact.',
+        url: process.env.NEXT_PUBLIC_SITE_URL || 'https://regionsystemsllc.com',
+        title: 'Region Systems LLC — AI & Automation for Indiana SMBs',
+        description: 'We help Indiana businesses save hours and reduce errors with practical AI and automation.',
         siteName: 'Region Systems LLC',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Region Systems LLC - AI Consulting & Automation Integration',
-        description: 'AI consulting and automation integration for growing businesses.',
+        title: 'Region Systems LLC — AI & Automation for Indiana SMBs',
+        description: 'Practical automation for Indiana small and mid-sized businesses.',
     },
 }
 
@@ -40,7 +40,7 @@ export default function RootLayout({
         <html lang="en" className="scroll-smooth">
             <head>
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="canonical" href="https://regionsystems.com" />
+                <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || 'https://regionsystemsllc.com'} />
             </head>
             <body className={`${inter.className} antialiased bg-site text-navy-900`}>
                 {process.env.NEXT_PUBLIC_GA4_ID && (

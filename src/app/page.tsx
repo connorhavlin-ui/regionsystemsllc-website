@@ -26,16 +26,11 @@ export default function Home() {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
-                                Transform Your Business with
-                                <span className="gradient-text block">
-                                    Intelligent Automation
-                                </span>
+                                Region Systems LLC — Indiana AI & Automation
                             </h1>
 
                             <p className="text-xl text-navy-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-                                Founded by Connor Havlin, a 19-year-old Nuclear Engineering student at Purdue who grew up with AI technology.
-                                We bring fresh, fast, and determined innovation to business automation. While others are slow and outdated,
-                                we deliver custom AI solutions that actually fit your business needs.
+                                Save hours every week, cut manual errors, and speed up response times. We design practical AI and automation systems for Indiana small and mid‑sized businesses.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -65,27 +60,12 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Trust Indicators */}
+            {/* Indiana Coverage Blurb */}
             <section className="py-16 bg-white border-b border-navy-100">
-                <div className="container-custom">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div className="animate-fade-in">
-                            <div className="text-3xl font-bold text-navy-800 mb-2">Aug 2025</div>
-                            <div className="text-navy-600">Founded</div>
-                        </div>
-                        <div className="animate-fade-in animation-delay-200">
-                            <div className="text-3xl font-bold text-navy-800 mb-2">100%</div>
-                            <div className="text-navy-600">Client Satisfaction</div>
-                        </div>
-                        <div className="animate-fade-in animation-delay-400">
-                            <div className="text-3xl font-bold text-navy-800 mb-2">Student</div>
-                            <div className="text-navy-600">Led Innovation</div>
-                        </div>
-                        <div className="animate-fade-in animation-delay-600">
-                            <div className="text-3xl font-bold text-navy-800 mb-2">24/7</div>
-                            <div className="text-navy-600">Support Available</div>
-                        </div>
-                    </div>
+                <div className="container-custom text-center">
+                    <p className="text-lg text-navy-700">
+                        Proudly serving Indiana (ET): West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, and Bloomington.
+                    </p>
                 </div>
             </section>
 

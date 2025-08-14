@@ -2,9 +2,9 @@ import ContactForm from '@/components/ContactForm'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Contact Us - Region Systems LLC',
-    description: 'Get in touch with Region Systems LLC for AI consulting and automation integration services.',
-    keywords: 'contact, AI consulting, automation integration, free consultation, get quote',
+    title: 'Contact Region Systems LLC (Indiana) — Schedule a Call',
+    description: 'Indiana-based AI & automation for SMBs. Hours: Mon–Fri 9AM–6PM ET (West Lafayette). Email hello@regionsystemsllc.com or schedule via Google Calendar.',
+    keywords: 'contact, AI consulting, automation integration, Indiana, SMB, schedule',
 }
 
 export default function Contact() {
@@ -16,7 +16,7 @@ export default function Contact() {
                     <h2 className="text-2xl font-bold text-navy-900 mb-4">Book a Call</h2>
                     <div className="bg-white rounded-xl border border-navy-100 shadow-lg p-4">
                         <div className="aspect-[16/9] w-full">
-                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1o1YoiNdOa4Ezoy_Bw793sj5TSiRj4O2FDy08heBiQMveo2cP2CbMEUdRmxXJ2Y9H83v61NJQJ?gv=true" style={{ border: 0 }} width="100%" height="600" frameBorder={0}></iframe>
+                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1o1YoiNdOa4Ezoy_Bw793sj5TSiRj4O2FDy08heBiQMveo2cP2CbMEUdRmxXJ2Y9H83u61NJQJ?gv=true" style={{ border: 0 }} width="100%" height="600" frameBorder={0}></iframe>
                         </div>
                     </div>
                 </div>

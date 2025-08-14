@@ -3,31 +3,30 @@ import Link from 'next/link'
 export default function Pricing() {
     const plans = [
         {
-            name: 'Discovery Workshop',
-            description: 'Structured session to map opportunities and ROI.',
+            name: 'Automation Audit — $249 flat',
+            description: 'One-hour audit to map time sinks and failure points, with a prioritized action list.',
             features: [
                 'Process review & goals',
-                'High-level architecture',
-                'Prioritized roadmap',
-                'Actionable next steps',
+                'Opportunity matrix + ROI estimates',
+                '1-page action plan (next steps)',
             ],
         },
         {
-            name: 'Starter Project',
-            description: 'One focused automation or integration to prove value fast.',
+            name: 'Starter Automation — from $749',
+            description: 'One focused workflow automation or integration to quickly remove manual work.',
             features: [
                 'Implementation & testing',
                 'Documentation & handoff',
-                'Change management support',
+                'Lightweight monitoring',
             ],
         },
         {
-            name: 'Growth Project',
-            description: 'Multi-workflow system with integrations and monitoring.',
+            name: 'Growth Bundle — from $1,950',
+            description: 'Multi-workflow system with integrations, error handling, and dashboards.',
             features: [
                 'End-to-end delivery',
                 'Monitoring & alerting',
-                'SOPs & training',
+                'SOPs & handoff',
             ],
         },
     ]
@@ -37,7 +36,7 @@ export default function Pricing() {
             <div className="container-custom">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-4">Pricing</h1>
-                    <p className="text-navy-600 max-w-2xl mx-auto">Transparent, simple packages. Contact for a tailored quote based on scope and timelines.</p>
+                    <p className="text-navy-600 max-w-2xl mx-auto">Productized anchors with clear deliverables. Contact for a tailored quote based on scope. Indiana SMBs only.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -50,7 +49,10 @@ export default function Pricing() {
                                     <li key={f} className="text-sm text-navy-700">• {f}</li>
                                 ))}
                             </ul>
-                            <Link href="/contact" className="btn-primary w-full inline-block text-center">Contact for quote</Link>
+                            <div className="flex flex-col space-y-2">
+                                <Link href="/payments" className="btn-outline w-full inline-block text-center">Pay Now</Link>
+                                <Link href="/contact" className="btn-primary w-full inline-block text-center">Schedule / Contact</Link>
+                            </div>
                         </div>
                     ))}
                 </div>

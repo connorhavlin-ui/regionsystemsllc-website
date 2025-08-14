@@ -78,7 +78,7 @@ export default function ContactForm() {
         'AI Strategy & Consulting',
         'Automation Integration',
         'Custom AI Solutions',
-        'Training & Support',
+        'Ongoing Support',
         'Business Intelligence',
         'Data Management',
         'System Integration',
@@ -107,8 +107,8 @@ export default function ContactForm() {
         {
             icon: Mail,
             title: 'Email Us',
-            details: 'regionsys.auto@gmail.com',
-            link: 'mailto:regionsys.auto@gmail.com',
+            details: 'hello@regionsystemsllc.com',
+            link: 'mailto:hello@regionsystemsllc.com',
             description: 'Send us an email anytime'
         },
         {
@@ -120,17 +120,17 @@ export default function ContactForm() {
         },
         {
             icon: MapPin,
-            title: 'Service Areas',
-            details: 'Remote & On-site',
+            title: 'Service Area',
+            details: 'Indiana (ET)',
             link: '#',
-            description: 'Nationwide remote services, travel available'
+            description: 'West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington'
         },
         {
             icon: Clock,
             title: 'Response Time',
-            details: '< 12 hours',
+            details: 'Mon–Fri 9AM–6PM ET',
             link: '#',
-            description: 'Fast responses, available 24/7'
+            description: 'Typical first response in under 12 hours'
         }
     ]
 
@@ -252,11 +252,10 @@ export default function ContactForm() {
                                     <span>Schedule a Call</span>
                                 </h3>
                                 <p className="text-sm text-navy-600 mb-4">
-                                    Prefer to speak directly? Schedule a 30-minute consultation call
-                                    to discuss your AI and automation needs.
+                                    Prefer to speak directly? Schedule a 30‑minute consultation call (Google Calendar).
                                 </p>
                                 <a
-                                    href="https://calendly.com/regionsystems"
+                                    href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1o1YoiNdOa4Ezoy_Bw793sj5TSiRj4O2FDy08heBiQMveo2cP2CbMEUdRmxXJ2Y9H83u61NJQJ?gv=true"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-outline text-sm w-full text-center block"

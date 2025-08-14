@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://regionsystems.com/sitemap.xml
+Sitemap: https://regionsystemsllc.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1

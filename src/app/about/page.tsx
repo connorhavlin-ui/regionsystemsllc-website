@@ -16,20 +16,20 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About Us - Region Systems & Automations',
-    description: 'Learn about Region Systems & Automations - our mission, values, and expert team dedicated to transforming businesses through AI and automation solutions.',
-    keywords: 'about us, AI consulting team, automation experts, company mission, business transformation',
+    title: 'About Region Systems LLC — Indiana AI & Automation',
+    description: 'Indiana-based, ET hours. We help small and mid-sized businesses save time and reduce errors with pragmatic AI and automation.',
+    keywords: 'Indiana AI, Indiana automation, SMB, West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington',
 }
 
 export default function About() {
     const teamMembers = [
         {
             name: 'Connor Havlin',
-            role: 'CEO & Founder',
-            bio: '19-year-old Nuclear Engineering student at Purdue University who grew up with AI technology. Self-taught in automation and AI through personal projects and hands-on learning.',
-            expertise: ['AI Implementation', 'Nuclear Engineering', 'Business Automation', 'Custom Solutions'],
+            role: 'Founder',
+            bio: 'Based in West Lafayette, Indiana (ET). Focused on building practical automation that removes repetitive work for SMBs.',
+            expertise: ['AI Implementation', 'Process Automation', 'Systems Integration', 'Custom Solutions'],
             linkedin: '#',
-            email: 'connor@regionsystems.com'
+            email: 'hello@regionsystemsllc.com'
         }
         // Growing team - new members joining soon
     ]
@@ -59,34 +59,14 @@ export default function About() {
 
     const milestones = [
         {
-            year: 'August 2025',
-            title: 'Company Founded',
-            description: 'Started by Connor Havlin with a vision to make AI accessible to businesses of all sizes.'
+            year: '2024–Present',
+            title: 'Focused on Indiana SMBs',
+            description: 'Delivering automation and AI for small and mid-sized businesses across Indiana.'
         },
         {
-            year: 'September 2025',
-            title: 'First Clients',
-            description: 'Successfully launched AI consulting services for local businesses.'
-        },
-        {
-            year: 'Q4 2025',
-            title: 'Service Expansion',
-            description: 'Expanded to offer full automation integration services.'
-        },
-        {
-            year: '2026 Goals',
-            title: 'Team Growth',
-            description: 'Planning to grow team with additional AI specialists and automation experts.'
-        },
-        {
-            year: '2026 Vision',
-            title: 'Regional Expansion',
-            description: 'Expanding services across the Midwest region.'
-        },
-        {
-            year: 'Future',
-            title: 'Innovation Focus',
-            description: 'Continued focus on cutting-edge AI solutions and business transformation.'
+            year: 'Ongoing',
+            title: 'Practical Results',
+            description: 'Measured outcomes: hours saved, fewer errors, faster response times.'
         }
     ]
 
@@ -103,20 +83,7 @@ export default function About() {
                             We're a team of AI experts, automation specialists, and business strategists
                             dedicated to transforming how businesses operate through intelligent technology solutions.
                         </p>
-                        <div className="flex flex-wrap justify-center gap-4 text-sm text-navy-600">
-                            <div className="flex items-center space-x-2">
-                                <CheckCircle className="h-4 w-4 text-accent-600" />
-                                <span>Founded in August 2025</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <CheckCircle className="h-4 w-4 text-accent-600" />
-                                <span>Growing Client Base</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <CheckCircle className="h-4 w-4 text-accent-600" />
-                                <span>Student-Led Innovation</span>
-                            </div>
-                        </div>
+                        <p className="text-navy-600">Indiana (ET) coverage: West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington.</p>
                     </div>
                 </div>
             </section>
@@ -144,11 +111,8 @@ export default function About() {
                                     <Target className="h-8 w-8 text-accent-600" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-semibold text-navy-900 mb-2">My Vision</h3>
-                                    <p className="text-navy-600">
-                                        To prove that young, determined entrepreneurs can deliver better AI solutions
-                                        than slow corporate giants - one custom automation at a time.
-                                    </p>
+                                <h3 className="text-xl font-semibold text-navy-900 mb-2">Approach</h3>
+                                <p className="text-navy-600">Clear scope, quick iterations, and measurable outcomes. No hype — just systems that save time and reduce errors.</p>
                                 </div>
                             </div>
                         </div>
