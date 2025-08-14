@@ -14,6 +14,7 @@ const Footer = () => {
             { label: 'AI Consulting', href: '/services#ai-consulting' },
             { label: 'Automation Integration', href: '/services#automation' },
             { label: 'Custom Solutions', href: '/services#custom-solutions' },
+            { label: 'Ongoing Support', href: '/contact' },
             { label: 'Payments', href: '/payments' },
         ],
         legal: [
@@ -109,9 +110,9 @@ const Footer = () => {
                             </div>
                             <div className="flex items-start space-x-3">
                                 <MapPin className="h-5 w-5 text-accent-400 mt-0.5 flex-shrink-0" />
-                                    <div className="text-navy-300 text-sm">
-                                        Indiana-focused (ET) — West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington
-                                    </div>
+                                <div className="text-navy-300 text-sm">
+                                    Indiana-focused (ET) — West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -111,8 +111,8 @@ export default function About() {
                                     <Target className="h-8 w-8 text-accent-600" />
                                 </div>
                                 <div>
-                                <h3 className="text-xl font-semibold text-navy-900 mb-2">Approach</h3>
-                                <p className="text-navy-600">Clear scope, quick iterations, and measurable outcomes. No hype — just systems that save time and reduce errors.</p>
+                                    <h3 className="text-xl font-semibold text-navy-900 mb-2">Approach</h3>
+                                    <p className="text-navy-600">Clear scope, quick iterations, and measurable outcomes. No hype — just systems that save time and reduce errors.</p>
                                 </div>
                             </div>
                         </div>

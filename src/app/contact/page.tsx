@@ -16,7 +16,7 @@ export default function Contact() {
                     <h2 className="text-2xl font-bold text-navy-900 mb-4">Book a Call</h2>
                     <div className="bg-white rounded-xl border border-navy-100 shadow-lg p-4">
                         <div className="aspect-[16/9] w-full">
-                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1o1YoiNdOa4Ezoy_Bw793sj5TSiRj4O2FDy08heBiQMveo2cP2CbMEUdRmxXJ2Y9H83u61NJQJ?gv=true" style={{ border: 0 }} width="100%" height="600" frameBorder={0}></iframe>
+                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ20YP2CwfwV9ha5U4udJfhgdck5hSLEANzt3UaMFcTTco4Y-sK-y4SNnh9fEZZUm2dBVzlJOGdv?gv=true" style={{ border: 0 }} width="100%" height="600" frameBorder={0}></iframe>
                         </div>
                     </div>
                 </div>

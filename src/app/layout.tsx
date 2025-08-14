@@ -41,6 +41,9 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || 'https://regionsystemsllc.com'} />
+                {/* Google Calendar Scheduling Button assets */}
+                <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+                <Script src="https://calendar.google.com/calendar/scheduling-button-script.js" strategy="afterInteractive" />
             </head>
             <body className={`${inter.className} antialiased bg-site text-navy-900`}>
                 {process.env.NEXT_PUBLIC_GA4_ID && (

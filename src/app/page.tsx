@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ScheduleButton from '@/components/ScheduleButton'
 import {
     ArrowRight,
     Bot,
@@ -18,7 +19,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
                 <div className="container-custom relative z-10">
-                    <div className="text-center max-w-4xl mx-auto">
+                        <div className="text-center max-w-4xl mx-auto">
                         <div className="animate-fade-in">
                             <div className="inline-flex items-center space-x-2 bg-accent-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
                                 <Bot className="h-4 w-4" />
@@ -34,13 +35,7 @@ export default function Home() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link
-                                    href="/contact"
-                                    className="btn-primary text-lg inline-flex items-center space-x-2 group"
-                                >
-                                    <span>Start Your Transformation</span>
-                                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                                </Link>
+                                <ScheduleButton className="inline-flex" label="Schedule a Call" />
                                 <Link
                                     href="/services"
                                     className="btn-outline text-lg"
@@ -235,25 +230,12 @@ export default function Home() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                            <Link
-                                href="/contact"
-                                className="bg-accent-600 hover:bg-accent-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center space-x-2"
-                            >
-                                <MessageSquare className="h-5 w-5" />
-                                <span>Schedule a Consultation</span>
-                            </Link>
-                            <Link
-                                href="/services"
-                                className="border-2 border-white text-white hover:bg-white hover:text-navy-900 font-semibold py-4 px-8 rounded-lg transition-all duration-300"
-                            >
-                                View All Services
-                            </Link>
+                            <ScheduleButton className="inline-flex" label="Schedule a Consultation" />
+                            <Link href="/services" className="border-2 border-white text-white hover:bg-white hover:text-navy-900 font-semibold py-4 px-8 rounded-lg transition-all duration-300">View All Services</Link>
                         </div>
 
                         <div className="text-center text-navy-300">
-                            <p className="text-sm">
-                                Free consultation • No commitment • Expert guidance
-                            </p>
+                            <p className="text-sm">Mon–Fri 9AM–6PM ET • Indiana SMBs • Practical outcomes</p>
                         </div>
                     </div>
                 </div>

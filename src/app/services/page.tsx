@@ -68,10 +68,9 @@ export default function Services() {
                 'API Development & Integration'
             ],
             benefits: [
-                'Up to 80% reduction in manual tasks',
+                'Significant reduction in manual tasks',
                 'Improved accuracy and consistency',
-                'Faster processing times',
-                '24/7 automated operations'
+                'Faster processing times'
             ],
             pricing: '',
             timeline: ''
@@ -95,29 +94,6 @@ export default function Services() {
                 'Seamless integration with existing systems',
                 'Scalable and maintainable solutions',
                 'Ongoing support and optimization'
-            ],
-            pricing: '',
-            timeline: ''
-        },
-        {
-            id: 'training',
-            icon: GraduationCap,
-            title: 'Training & Support',
-            subtitle: 'Empower your team with AI knowledge',
-            description: 'Comprehensive training programs and ongoing support to ensure your team can effectively leverage and maintain AI solutions.',
-            features: [
-                'AI Literacy Training',
-                'Technical Skills Development',
-                'Best Practices Workshops',
-                'Ongoing Technical Support',
-                'Performance Monitoring',
-                'Continuous Optimization'
-            ],
-            benefits: [
-                'Self-sufficient AI operations',
-                'Reduced dependency on external support',
-                'Improved solution adoption',
-                'Continuous improvement capabilities'
             ],
             pricing: '',
             timeline: ''
