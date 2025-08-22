@@ -11,7 +11,7 @@ export default function Contact() {
     return (
         <>
             {/* Hero Section */}
-            <section className="pt-28 pb-16 has-soft-mesh">
+            <section className="pt-32 pb-16 has-soft-mesh">
                 <div className="container-custom text-center">
                     <div className="max-w-4xl mx-auto">
                         <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-6">
@@ -51,7 +51,7 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll">
+                    <div>
                         <ContactForm />
                     </div>
                 </div>
@@ -69,7 +69,7 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                    <div>
                         <div className="bg-white rounded-xl border border-navy-100 shadow-lg p-6">
                             <div className="aspect-[16/9] w-full">
                                 <iframe
@@ -99,7 +99,7 @@ export default function Contact() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="0">
+                        <div className="text-center">
                             <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
                                 <div className="text-2xl">📧</div>
                             </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                             <p className="text-sm text-navy-500 mt-2">We respond within 24 hours</p>
                         </div>
 
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                        <div className="text-center">
                             <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
                                 <div className="text-2xl">🕒</div>
                             </div>
@@ -117,7 +117,7 @@ export default function Contact() {
                             <p className="text-sm text-navy-500 mt-2">9:00 AM - 6:00 PM ET</p>
                         </div>
 
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="400">
+                        <div className="text-center">
                             <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
                                 <div className="text-2xl">📍</div>
                             </div>

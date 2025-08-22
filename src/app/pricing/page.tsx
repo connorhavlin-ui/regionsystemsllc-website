@@ -35,7 +35,7 @@ export default function Pricing() {
     ]
 
     return (
-        <section className="pt-28 pb-16 has-soft-mesh">
+        <section className="pt-32 pb-16 has-soft-mesh">
             <div className="container-custom">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-4">Pricing</h1>
@@ -56,7 +56,7 @@ export default function Pricing() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {plans.map((plan, index) => (
-                        <div key={plan.name} className="bg-white rounded-xl p-6 border border-navy-100 shadow-lg transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                        <div key={plan.name} className="bg-white rounded-xl p-6 border border-navy-100 shadow-lg">
                             <h2 className="text-xl font-semibold text-navy-900 mb-2">{plan.name}</h2>
                             <p className="text-navy-600 mb-4">{plan.description}</p>
                             <ul className="space-y-2 mb-6">

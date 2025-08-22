@@ -16,13 +16,13 @@ export default function Home() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-screen flex items-center justify-center pt-20 has-soft-mesh">
+            <section className="relative min-h-screen flex items-center justify-center pt-32 has-soft-mesh">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
                 <div className="container-custom relative z-10">
                     <div className="text-center max-w-4xl mx-auto">
-                        <div className="animate-fade-in">
+                        <div className="animate-fade-in-up">
                             <div className="inline-flex items-center space-x-2 bg-accent-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
                                 <Bot className="h-4 w-4" />
                                 <span>AI-Powered Business Transformation</span>
@@ -107,7 +107,7 @@ export default function Home() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* AI Consulting */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="0">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Bot className="h-8 w-8 text-accent-600" />
                             </div>
@@ -138,7 +138,7 @@ export default function Home() {
                         </div>
 
                         {/* Process Automation */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Zap className="h-8 w-8 text-accent-600" />
                             </div>
@@ -169,7 +169,7 @@ export default function Home() {
                         </div>
 
                         {/* Data Analytics */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="400">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Target className="h-8 w-8 text-accent-600" />
                             </div>
@@ -215,7 +215,7 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="0">
+                        <div className="text-center">
                             <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
                                 <Shield className="h-8 w-8 text-navy-700" />
                             </div>
@@ -223,7 +223,7 @@ export default function Home() {
                             <p className="text-navy-600 text-sm">Indiana-based team with deep understanding of local business needs.</p>
                         </div>
 
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                        <div className="text-center">
                             <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
                                 <Zap className="h-8 w-8 text-accent-600" />
                             </div>
@@ -231,7 +231,7 @@ export default function Home() {
                             <p className="text-navy-600 text-sm">Quick turnaround times with proven automation frameworks.</p>
                         </div>
 
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="400">
+                        <div className="text-center">
                             <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
                                 <MessageSquare className="h-8 w-8 text-navy-700" />
                             </div>
@@ -239,7 +239,7 @@ export default function Home() {
                             <p className="text-navy-600 text-sm">Continuous monitoring and support to ensure optimal performance.</p>
                         </div>
 
-                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="600">
+                        <div className="text-center">
                             <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
                                 <Globe className="h-8 w-8 text-accent-600" />
                             </div>

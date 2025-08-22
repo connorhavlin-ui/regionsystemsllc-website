@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import ScrollAnimations from '@/components/ScrollAnimations'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -115,54 +116,7 @@ export default function RootLayout({
                     {children}
                 </main>
                 <Footer />
-
-                {/* Scroll animation functionality - moved to end of body */}
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            // Wait for page to fully load before initializing animations
-                            window.addEventListener('load', function() {
-                                // Small delay to ensure DOM is ready
-                                setTimeout(function() {
-                                    initScrollAnimations();
-                                }, 100);
-                            });
-
-                            // Also initialize when DOM is ready
-                            if (document.readyState === 'loading') {
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    setTimeout(function() {
-                                        initScrollAnimations();
-                                    }, 100);
-                                });
-                            } else {
-                                setTimeout(function() {
-                                    initScrollAnimations();
-                                }, 100);
-                            }
-
-                            function initScrollAnimations() {
-                                const observerOptions = {
-                                    threshold: 0.1,
-                                    rootMargin: '0px 0px -50px 0px'
-                                };
-
-                                const observer = new IntersectionObserver((entries) => {
-                                    entries.forEach((entry) => {
-                                        if (entry.isIntersecting) {
-                                            entry.target.classList.add('animate-in');
-                                        }
-                                    });
-                                }, observerOptions);
-
-                                // Observe all elements with animate-on-scroll class
-                                document.querySelectorAll('.animate-on-scroll').forEach((el) => {
-                                    observer.observe(el);
-                                });
-                            }
-                        `,
-                    }}
-                />
+                <ScrollAnimations />
             </body>
         </html>
     )

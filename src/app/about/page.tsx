@@ -108,7 +108,7 @@ export default function About() {
             <section className="section-padding bg-white">
                 <div className="container-custom">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll">
+                        <div>
                             <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-8">
                                 Our Mission
                             </h2>
@@ -131,7 +131,7 @@ export default function About() {
                             </div>
                         </div>
 
-                        <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                        <div>
                             <div className="bg-gradient-to-br from-navy-50 to-accent-50 rounded-2xl p-8 border border-navy-100">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-6">Why Choose Us?</h3>
                                 <div className="space-y-4">
@@ -177,7 +177,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {values.map((value, index) => (
-                            <div key={value.title} className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                            <div key={value.title} className="text-center">
                                 <div className="p-4 bg-white rounded-full w-fit mx-auto mb-4 shadow-lg">
                                     <value.icon className="h-8 w-8 text-accent-600" />
                                 </div>
@@ -203,7 +203,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {teamMembers.map((member, index) => (
-                            <div key={member.name} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                            <div key={member.name} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
                                 <div className="text-center mb-6">
                                     <div className="w-24 h-24 bg-gradient-to-br from-accent-100 to-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Users className="h-12 w-12 text-accent-600" />
@@ -255,7 +255,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {milestones.map((milestone, index) => (
-                            <div key={milestone.year} className="bg-white rounded-xl p-8 shadow-lg border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                            <div key={milestone.year} className="bg-white rounded-xl p-8 shadow-lg border border-navy-100">
                                 <div className="flex items-start space-x-4">
                                     <div className="p-3 bg-accent-100 rounded-lg">
                                         <TrendingUp className="h-8 w-8 text-accent-600" />

@@ -57,7 +57,7 @@ const Footer = () => {
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-16">
                     {/* Company Info */}
-                    <div className="lg:col-span-1 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll">
+                    <div className="lg:col-span-1">
                         <Link href="/" className="flex items-center space-x-3 mb-6">
                             <img src="/logo.png" alt="Region Systems LLC" className="h-8 w-auto" />
                             <div>
@@ -82,7 +82,7 @@ const Footer = () => {
                     </div>
 
                     {/* Company Links */}
-                    <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                    <div>
                         <h3 className="text-lg font-semibold mb-6">Company</h3>
                         <ul className="space-y-3">
                             {footerLinks.company.map((link) => (
@@ -99,7 +99,7 @@ const Footer = () => {
                     </div>
 
                     {/* Services Links */}
-                    <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="400">
+                    <div>
                         <h3 className="text-lg font-semibold mb-6">Services</h3>
                         <ul className="space-y-3">
                             {footerLinks.services.map((link) => (
@@ -116,7 +116,7 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="600">
+                    <div>
                         <h3 className="text-lg font-semibold mb-6">Get in Touch</h3>
                         <div className="space-y-4">
                             <div className="flex items-start space-x-3">

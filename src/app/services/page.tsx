@@ -105,7 +105,7 @@ export default function Services() {
     return (
         <>
             {/* Hero Section */}
-            <section className="pt-28 pb-16 has-soft-mesh">
+            <section className="pt-32 pb-16 has-soft-mesh">
                 <div className="container-custom text-center">
                     <div className="max-w-4xl mx-auto">
                         <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-6">
@@ -158,7 +158,7 @@ export default function Services() {
                     <div className="space-y-16">
                         {mainServices.map((service, index) => (
                             <div key={service.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll`} data-animation-delay={index * 200}>
+                                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                                     <div className="p-4 bg-accent-100 rounded-xl w-fit mb-6">
                                         <service.icon className="h-12 w-12 text-accent-600" />
                                     </div>
@@ -200,7 +200,7 @@ export default function Services() {
                                     </div>
                                 </div>
 
-                                <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''} transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll`} data-animation-delay={index * 200 + 100}>
+                                <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                                     <div className="bg-gradient-to-br from-navy-50 to-accent-50 rounded-2xl p-8 border border-navy-100">
                                         <div className="text-center">
                                             <h4 className="text-xl font-semibold text-navy-800 mb-4">Project Details</h4>
@@ -260,7 +260,7 @@ export default function Services() {
                                 features: ['Data mapping', 'ETL processes', 'Validation', 'Testing']
                             }
                         ].map((service, index) => (
-                            <div key={service.title} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                            <div key={service.title} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
                                 <div className="p-3 bg-navy-100 rounded-lg w-fit mb-6">
                                     <service.icon className="h-8 w-8 text-navy-700" />
                                 </div>
