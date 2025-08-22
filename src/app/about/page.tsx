@@ -11,14 +11,15 @@ import {
     CheckCircle,
     ArrowRight,
     Linkedin,
-    Mail
+    Mail,
+    Gift
 } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About Region Systems LLC — Indiana AI & Automation',
-    description: 'Indiana-based, ET hours. We help small and mid-sized businesses save time and reduce errors with pragmatic AI and automation.',
-    keywords: 'Indiana AI, Indiana automation, SMB, West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington',
+    title: 'About Region Systems LLC - AI & Automation Services | Indiana',
+    description: 'Learn about Region Systems LLC, Indiana-based AI and automation experts. We help businesses save time and reduce errors with practical solutions. Every project includes a free website.',
+    keywords: 'About Region Systems, AI consulting Indiana, automation services Indiana, Indiana automation experts, free website with automation',
 }
 
 export default function About() {
@@ -83,7 +84,22 @@ export default function About() {
                             We're a team of AI experts, automation specialists, and business strategists
                             dedicated to transforming how businesses operate through intelligent technology solutions.
                         </p>
-                        <p className="text-navy-600">Indiana (ET) coverage: West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington.</p>
+                        <p className="text-navy-600 mb-8">Indiana (ET) coverage: West Lafayette, NWI, Indianapolis, Fort Wayne, Bloomington.</p>
+
+                        {/* Free Website Offer */}
+                        <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 inline-block border border-accent-200">
+                            <div className="flex items-center space-x-3">
+                                <Gift className="h-6 w-6 text-accent-600" />
+                                <div className="text-left">
+                                    <h3 className="text-lg font-semibold text-navy-800">
+                                        🎁 Every Project Includes a Free Website
+                                    </h3>
+                                    <p className="text-navy-700 text-sm">
+                                        Get a professional website or complete rebuild at no additional cost
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -92,59 +108,53 @@ export default function About() {
             <section className="section-padding bg-white">
                 <div className="container-custom">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div>
+                        <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll">
                             <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-8">
                                 Our Mission
                             </h2>
                             <p className="text-lg text-navy-600 leading-relaxed mb-6">
                                 To bring fresh, fast, and affordable AI automation to growing businesses. As someone
-                                who grew up with this technology, I understand it intuitively and can implement
-                                solutions that actually work for your specific needs.
+                                who has worked in both large corporations and small businesses, I understand the unique
+                                challenges that SMBs face and the opportunities that automation can unlock.
                             </p>
-                            <p className="text-lg text-navy-600 leading-relaxed mb-8">
-                                Too many businesses are stuck with slow, expensive, one-size-fits-all solutions.
-                                I'm here to change that with custom automation that fits your business like a glove,
-                                delivered by someone who has time to care about your success.
+                            <p className="text-lg text-navy-600 leading-relaxed mb-6">
+                                We focus on practical, implementable solutions that deliver immediate value
+                                while building a foundation for long-term growth and efficiency.
                             </p>
-                            <div className="flex items-center space-x-4">
-                                <div className="p-3 bg-accent-100 rounded-lg">
-                                    <Target className="h-8 w-8 text-accent-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-semibold text-navy-900 mb-2">Approach</h3>
-                                    <p className="text-navy-600">Clear scope, quick iterations, and measurable outcomes. No hype — just systems that save time and reduce errors.</p>
-                                </div>
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <Link href="/contact" className="btn-primary">
+                                    Get Started
+                                </Link>
+                                <Link href="/services" className="btn-outline">
+                                    Our Services
+                                </Link>
                             </div>
                         </div>
 
-                        <div className="bg-gradient-to-br from-accent-500 to-navy-600 rounded-2xl p-8 text-white">
-                            <h3 className="text-2xl font-bold mb-6">What Sets Us Apart</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-start space-x-3">
-                                    <Zap className="h-6 w-6 text-accent-200 mt-1 flex-shrink-0" />
-                                    <div>
-                                        <h4 className="font-semibold mb-1">Rapid Implementation</h4>
-                                        <p className="text-accent-100 text-sm">
-                                            Our proven methodologies ensure quick deployment and immediate ROI.
-                                        </p>
+                        <div className="transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                            <div className="bg-gradient-to-br from-navy-50 to-accent-50 rounded-2xl p-8 border border-navy-100">
+                                <h3 className="text-2xl font-bold text-navy-900 mb-6">Why Choose Us?</h3>
+                                <div className="space-y-4">
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold text-navy-800">Local Expertise</h4>
+                                            <p className="text-sm text-navy-600">Indiana-based with deep understanding of local business needs</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-start space-x-3">
-                                    <Globe className="h-6 w-6 text-accent-200 mt-1 flex-shrink-0" />
-                                    <div>
-                                        <h4 className="font-semibold mb-1">Industry Expertise</h4>
-                                        <p className="text-accent-100 text-sm">
-                                            Deep knowledge across manufacturing, finance, healthcare, and more.
-                                        </p>
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold text-navy-800">Practical Approach</h4>
+                                            <p className="text-sm text-navy-600">Focus on solutions that work in the real world</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-start space-x-3">
-                                    <Award className="h-6 w-6 text-accent-200 mt-1 flex-shrink-0" />
-                                    <div>
-                                        <h4 className="font-semibold mb-1">Proven Results</h4>
-                                        <p className="text-accent-100 text-sm">
-                                            Track record of delivering measurable business outcomes and ROI.
-                                        </p>
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold text-navy-800">Free Website</h4>
+                                            <p className="text-sm text-navy-600">Every project includes a professional website or rebuild</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -153,147 +163,107 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Company Values */}
-            <section className="section-padding bg-navy-50">
+            {/* Values */}
+            <section className="section-padding bg-navy-50 has-soft-mesh">
                 <div className="container-custom">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
-                            Our Core Values
+                            Our Values
                         </h2>
                         <p className="text-xl text-navy-600 max-w-3xl mx-auto">
-                            These principles guide everything we do and shape how we work with our clients
-                            and each other.
+                            The principles that guide everything we do and every solution we deliver.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {values.map((value, index) => (
-                            <div key={index} className="bg-white rounded-xl p-8 shadow-lg card-hover text-center border border-navy-100">
-                                <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-6">
+                            <div key={value.title} className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                                <div className="p-4 bg-white rounded-full w-fit mx-auto mb-4 shadow-lg">
                                     <value.icon className="h-8 w-8 text-accent-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-navy-900 mb-4">
-                                    {value.title}
-                                </h3>
-                                <p className="text-navy-600 leading-relaxed">
-                                    {value.description}
-                                </p>
+                                <h3 className="text-lg font-semibold text-navy-900 mb-2">{value.title}</h3>
+                                <p className="text-navy-600 text-sm leading-relaxed">{value.description}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Company Timeline */}
+            {/* Team */}
             <section className="section-padding bg-white">
+                <div className="container-custom">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
+                            Our Team
+                        </h2>
+                        <p className="text-xl text-navy-600 max-w-3xl mx-auto">
+                            Meet the experts behind our AI and automation solutions.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {teamMembers.map((member, index) => (
+                            <div key={member.name} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                                <div className="text-center mb-6">
+                                    <div className="w-24 h-24 bg-gradient-to-br from-accent-100 to-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <Users className="h-12 w-12 text-accent-600" />
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-navy-900">{member.name}</h3>
+                                    <p className="text-accent-600 font-medium">{member.role}</p>
+                                </div>
+
+                                <p className="text-navy-600 mb-6 leading-relaxed">{member.bio}</p>
+
+                                <div className="mb-6">
+                                    <h4 className="font-semibold text-navy-800 mb-3">Expertise</h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {member.expertise.map((skill) => (
+                                            <span key={skill} className="px-3 py-1 bg-navy-100 text-navy-700 text-sm rounded-full">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div className="flex space-x-3">
+                                    <a href={member.linkedin} className="flex-1 bg-navy-800 hover:bg-navy-900 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">
+                                        <Linkedin className="h-4 w-4 inline mr-2" />
+                                        LinkedIn
+                                    </a>
+                                    <a href={`mailto:${member.email}`} className="flex-1 bg-accent-600 hover:bg-accent-700 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">
+                                        <Mail className="h-4 w-4 inline mr-2" />
+                                        Email
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Milestones */}
+            <section className="section-padding bg-navy-50 has-soft-mesh">
                 <div className="container-custom">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
                             Our Journey
                         </h2>
                         <p className="text-xl text-navy-600 max-w-3xl mx-auto">
-                            From a small startup to a leading AI consulting firm, here are the key
-                            milestones that have shaped our company.
+                            Key milestones in our mission to bring AI and automation to Indiana businesses.
                         </p>
                     </div>
 
-                    <div className="relative">
-                        {/* Timeline line */}
-                        <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-accent-200 hidden md:block"></div>
-
-                        <div className="space-y-8">
-                            {milestones.map((milestone, index) => (
-                                <div key={index} className="relative flex items-start space-x-8">
-                                    {/* Timeline dot */}
-                                    <div className="hidden md:flex items-center justify-center w-8 h-8 bg-accent-600 rounded-full text-white font-bold text-sm relative z-10">
-                                        {index + 1}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {milestones.map((milestone, index) => (
+                            <div key={milestone.year} className="bg-white rounded-xl p-8 shadow-lg border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay={index * 200}>
+                                <div className="flex items-start space-x-4">
+                                    <div className="p-3 bg-accent-100 rounded-lg">
+                                        <TrendingUp className="h-8 w-8 text-accent-600" />
                                     </div>
-
-                                    {/* Content */}
-                                    <div className="flex-1 bg-navy-50 rounded-xl p-6 md:p-8">
-                                        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                                            <h3 className="text-xl font-semibold text-navy-900">
-                                                {milestone.title}
-                                            </h3>
-                                            <span className="text-accent-600 font-semibold text-lg">
-                                                {milestone.year}
-                                            </span>
-                                        </div>
-                                        <p className="text-navy-600 leading-relaxed">
-                                            {milestone.description}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Team Section */}
-            <section className="section-padding bg-navy-50">
-                <div className="container-custom">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
-                            Meet the Founder
-                        </h2>
-                        <p className="text-xl text-navy-600 max-w-3xl mx-auto">
-                            Currently a solo operation with plans to expand the team in the coming months.
-                            Building a network of specialists to deliver even better solutions.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {teamMembers.map((member, index) => (
-                            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-navy-100">
-                                {/* Profile Image Placeholder */}
-                                <div className="h-64 bg-gradient-to-br from-accent-400 to-navy-600 flex items-center justify-center">
-                                    <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-navy-800">
-                                            {member.name.split(' ').map(n => n[0]).join('')}
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-navy-900 mb-1">
-                                        {member.name}
-                                    </h3>
-                                    <p className="text-accent-600 font-medium mb-3">
-                                        {member.role}
-                                    </p>
-                                    <p className="text-navy-600 text-sm leading-relaxed mb-4">
-                                        {member.bio}
-                                    </p>
-
-                                    {/* Expertise Tags */}
-                                    <div className="flex flex-wrap gap-2 mb-4">
-                                        {member.expertise.map((skill, skillIndex) => (
-                                            <span
-                                                key={skillIndex}
-                                                className="px-2 py-1 bg-accent-100 text-accent-800 text-xs rounded-full"
-                                            >
-                                                {skill}
-                                            </span>
-                                        ))}
-                                    </div>
-
-                                    {/* Contact Links */}
-                                    <div className="flex space-x-3">
-                                        <a
-                                            href={member.linkedin}
-                                            className="p-2 bg-navy-100 rounded-lg hover:bg-navy-200 transition-colors duration-300"
-                                            aria-label={`${member.name} LinkedIn`}
-                                        >
-                                            <Linkedin className="h-4 w-4 text-navy-600" />
-                                        </a>
-                                        <a
-                                            href={`mailto:${member.email}`}
-                                            className="p-2 bg-navy-100 rounded-lg hover:bg-navy-200 transition-colors duration-300"
-                                            aria-label={`Email ${member.name}`}
-                                        >
-                                            <Mail className="h-4 w-4 text-navy-600" />
-                                        </a>
+                                    <div>
+                                        <div className="text-sm font-semibold text-accent-600 mb-2">{milestone.year}</div>
+                                        <h3 className="text-xl font-semibold text-navy-900 mb-3">{milestone.title}</h3>
+                                        <p className="text-navy-600 leading-relaxed">{milestone.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -302,33 +272,22 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Call to Action */}
-            <section className="section-padding bg-gradient-to-br from-navy-800 to-navy-900 text-white">
-                <div className="container-custom">
-                    <div className="text-center max-w-4xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                            Ready to Work Together?
-                        </h2>
-                        <p className="text-xl text-navy-100 mb-10 leading-relaxed">
-                            Let's discuss how our expertise in AI and automation can help transform
-                            your business operations and drive sustainable growth.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
-                                href="/contact"
-                                className="bg-accent-600 hover:bg-accent-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center space-x-2"
-                            >
-                                <span>Start a Conversation</span>
-                                <ArrowRight className="h-5 w-5" />
-                            </Link>
-                            <Link
-                                href="/services"
-                                className="border-2 border-white text-white hover:bg-white hover:text-navy-900 font-semibold py-4 px-8 rounded-lg transition-all duration-300"
-                            >
-                                Explore Our Services
-                            </Link>
-                        </div>
+            {/* CTA Section */}
+            <section className="section-padding bg-gradient-to-r from-navy-800 to-navy-900 text-white">
+                <div className="container-custom text-center">
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                        Ready to Work Together?
+                    </h2>
+                    <p className="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+                        Let's discuss how our AI and automation expertise can transform your business operations.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link href="/contact" className="btn-primary bg-white text-navy-800 hover:bg-navy-50">
+                            Schedule a Consultation
+                        </Link>
+                        <Link href="/services" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
+                            View Services
+                        </Link>
                     </div>
                 </div>
             </section>

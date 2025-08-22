@@ -7,7 +7,9 @@ import {
     Target,
     Shield,
     CheckCircle,
-    MessageSquare
+    MessageSquare,
+    Globe,
+    Gift
 } from 'lucide-react'
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
                 <div className="container-custom relative z-10">
-                        <div className="text-center max-w-4xl mx-auto">
+                    <div className="text-center max-w-4xl mx-auto">
                         <div className="animate-fade-in">
                             <div className="inline-flex items-center space-x-2 bg-accent-100 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
                                 <Bot className="h-4 w-4" />
@@ -55,6 +57,32 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Free Website Offer Section */}
+            <section className="py-16 bg-gradient-to-r from-navy-50 to-accent-50 border-b border-navy-100">
+                <div className="container-custom text-center">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="inline-flex items-center space-x-3 bg-white px-6 py-3 rounded-full shadow-lg mb-6">
+                            <Gift className="h-6 w-6 text-accent-600" />
+                            <span className="text-lg font-semibold text-navy-800">Special Offer</span>
+                        </div>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+                            Every Project Includes a Free Website
+                        </h2>
+                        <p className="text-xl text-navy-700 mb-6 leading-relaxed">
+                            Get a professional website or complete website rebuild at no additional cost with every automation project.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link href="/contact" className="btn-primary">
+                                Learn More
+                            </Link>
+                            <Link href="/services" className="btn-outline">
+                                View Services
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Indiana Coverage Blurb */}
             <section className="py-16 bg-white border-b border-navy-100">
                 <div className="container-custom text-center">
@@ -79,7 +107,7 @@ export default function Home() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* AI Consulting */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="0">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Bot className="h-8 w-8 text-accent-600" />
                             </div>
@@ -101,142 +129,141 @@ export default function Home() {
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">ROI Analysis</span>
+                                    <span className="text-sm text-navy-600">ROI Analysis & Planning</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/services#ai-consulting"
-                                className="text-accent-600 hover:text-accent-700 font-medium inline-flex items-center space-x-1"
-                            >
-                                <span>Learn More</span>
-                                <ArrowRight className="h-4 w-4" />
+                            <Link href="/services" className="btn-outline w-full text-center">
+                                Learn More
                             </Link>
                         </div>
 
-                        {/* Automation Integration */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
+                        {/* Process Automation */}
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Zap className="h-8 w-8 text-accent-600" />
                             </div>
                             <h3 className="text-xl font-semibold text-navy-900 mb-4">
-                                Automation Integration
+                                Process Automation
                             </h3>
                             <p className="text-navy-600 mb-6 leading-relaxed">
-                                End-to-end automation solutions that streamline operations,
-                                reduce manual work, and improve accuracy across your organization.
+                                Streamline repetitive tasks with intelligent automation workflows
+                                that reduce errors and free up your team's time.
                             </p>
                             <ul className="space-y-2 mb-6">
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">Process Automation</span>
+                                    <span className="text-sm text-navy-600">Workflow Design</span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">Workflow Optimization</span>
+                                    <span className="text-sm text-navy-600">Integration Setup</span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">System Integration</span>
+                                    <span className="text-sm text-navy-600">Monitoring & Alerts</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/services#automation"
-                                className="text-accent-600 hover:text-accent-700 font-medium inline-flex items-center space-x-1"
-                            >
-                                <span>Learn More</span>
-                                <ArrowRight className="h-4 w-4" />
+                            <Link href="/services" className="btn-outline w-full text-center">
+                                Learn More
                             </Link>
                         </div>
 
-                        {/* Custom Solutions */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
+                        {/* Data Analytics */}
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="400">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Target className="h-8 w-8 text-accent-600" />
                             </div>
                             <h3 className="text-xl font-semibold text-navy-900 mb-4">
-                                Custom AI Solutions
+                                Data Analytics & Insights
                             </h3>
                             <p className="text-navy-600 mb-6 leading-relaxed">
-                                Tailored AI applications built specifically for your unique business
-                                challenges, from machine learning models to intelligent systems.
+                                Transform raw data into actionable insights with custom dashboards
+                                and automated reporting systems.
                             </p>
                             <ul className="space-y-2 mb-6">
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">Machine Learning Models</span>
+                                    <span className="text-sm text-navy-600">Custom Dashboards</span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">Predictive Analytics</span>
+                                    <span className="text-sm text-navy-600">Automated Reporting</span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <CheckCircle className="h-4 w-4 text-accent-600" />
-                                    <span className="text-sm text-navy-600">Intelligent Dashboards</span>
+                                    <span className="text-sm text-navy-600">Performance Tracking</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/services#custom-solutions"
-                                className="text-accent-600 hover:text-accent-700 font-medium inline-flex items-center space-x-1"
-                            >
-                                <span>Learn More</span>
-                                <ArrowRight className="h-4 w-4" />
+                            <Link href="/services" className="btn-outline w-full text-center">
+                                Learn More
                             </Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* About Region Systems LLC */}
+            {/* Why Choose Us */}
             <section className="section-padding bg-white">
                 <div className="container-custom">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">About Region Systems LLC</h2>
-                            <p className="text-lg text-navy-600 mb-6 leading-relaxed">
-                                We help organizations streamline operations with AI consulting and automation integration.
-                                Our focus is practical outcomes: faster processes, fewer errors, and clear ROI.
-                            </p>
-                            <ul className="space-y-3">
-                                <li className="flex items-center space-x-2"><CheckCircle className="h-4 w-4 text-accent-600" /><span className="text-navy-700">Custom AI solutions tailored to your workflows</span></li>
-                                <li className="flex items-center space-x-2"><CheckCircle className="h-4 w-4 text-accent-600" /><span className="text-navy-700">Automation that connects your existing tools</span></li>
-                                <li className="flex items-center space-x-2"><CheckCircle className="h-4 w-4 text-accent-600" /><span className="text-navy-700">Transparent delivery and measurable results</span></li>
-                            </ul>
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
+                            Why Choose Region Systems?
+                        </h2>
+                        <p className="text-xl text-navy-600 max-w-3xl mx-auto">
+                            We combine local expertise with cutting-edge technology to deliver results that matter.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="0">
+                            <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
+                                <Shield className="h-8 w-8 text-navy-700" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-navy-900 mb-2">Local Expertise</h3>
+                            <p className="text-navy-600 text-sm">Indiana-based team with deep understanding of local business needs.</p>
                         </div>
-                        <div className="bg-gradient-to-br from-accent-500 to-navy-600 rounded-2xl p-8 text-white">
-                            <h3 className="text-xl font-bold mb-4">How we work</h3>
-                            <p className="text-accent-100 leading-relaxed">
-                                Discovery → design → implementation → optimization. We integrate with your team and systems,
-                                deliver in iterative milestones, and support ongoing improvements.
-                            </p>
+
+                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="200">
+                            <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
+                                <Zap className="h-8 w-8 text-accent-600" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-navy-900 mb-2">Fast Implementation</h3>
+                            <p className="text-navy-600 text-sm">Quick turnaround times with proven automation frameworks.</p>
+                        </div>
+
+                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="400">
+                            <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
+                                <MessageSquare className="h-8 w-8 text-navy-700" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-navy-900 mb-2">Ongoing Support</h3>
+                            <p className="text-navy-600 text-sm">Continuous monitoring and support to ensure optimal performance.</p>
+                        </div>
+
+                        <div className="text-center transform transition-all duration-700 opacity-0 translate-y-8 animate-on-scroll" data-animation-delay="600">
+                            <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
+                                <Globe className="h-8 w-8 text-accent-600" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-navy-900 mb-2">Free Website</h3>
+                            <p className="text-navy-600 text-sm">Every project includes a professional website or rebuild at no cost.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Testimonials intentionally omitted until real references are available */}
-
-            {/* Call to Action */}
-            <section className="section-padding bg-gradient-to-br from-navy-800 to-navy-900 text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-                <div className="container-custom relative z-10">
-                    <div className="text-center max-w-4xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                            Ready to Transform Your Business?
-                        </h2>
-                        <p className="text-xl text-navy-100 mb-10 leading-relaxed">
-                            Join hundreds of businesses that have already transformed their operations
-                            with our AI and automation solutions. Let's discuss how we can help you achieve
-                            your goals.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                            <ScheduleButton className="inline-flex" label="Schedule a Consultation" />
-                            <Link href="/services" className="border-2 border-white text-white hover:bg-white hover:text-navy-900 font-semibold py-4 px-8 rounded-lg transition-all duration-300">View All Services</Link>
-                        </div>
-
-                        <div className="text-center text-navy-300">
-                            <p className="text-sm">Mon–Fri 9AM–6PM ET • Indiana SMBs • Practical outcomes</p>
-                        </div>
+            {/* CTA Section */}
+            <section className="section-padding bg-gradient-to-r from-navy-800 to-navy-900 text-white">
+                <div className="container-custom text-center">
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                        Ready to Transform Your Business?
+                    </h2>
+                    <p className="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+                        Let's discuss how AI and automation can streamline your operations and boost your bottom line.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <ScheduleButton className="inline-flex" label="Schedule Your Free Consultation" />
+                        <Link href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
+                            Get in Touch
+                        </Link>
                     </div>
                 </div>
             </section>
