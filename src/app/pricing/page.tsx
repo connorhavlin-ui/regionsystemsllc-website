@@ -65,8 +65,7 @@ export default function Pricing() {
                                 ))}
                             </ul>
                             <div className="flex flex-col space-y-2">
-                                <Link href="/payments" className="btn-outline w-full inline-block text-center">Pay Now</Link>
-                                <Link href="/contact" className="btn-primary w-full inline-block text-center">Schedule / Contact</Link>
+                                <Link href="/contact" className="btn-primary w-full inline-block text-center">Schedule Consultation</Link>
                             </div>
                         </div>
                     ))}
@@ -97,6 +96,15 @@ export default function Pricing() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* CTA Section */}
+                <div className="mt-16 text-center">
+                    <h3 className="text-2xl font-bold text-navy-900 mb-4">Ready to Get Started?</h3>
+                    <p className="text-navy-600 mb-6">Contact us to discuss your specific needs and get a customized quote.</p>
+                    <Link href="/contact" className="btn-primary">
+                        Schedule a Free Consultation
+                    </Link>
                 </div>
             </div>
         </section>

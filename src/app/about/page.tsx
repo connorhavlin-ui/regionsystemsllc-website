@@ -152,8 +152,8 @@ export default function About() {
                                     <div className="flex items-start space-x-3">
                                         <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-navy-800">Free Website</h4>
-                                            <p className="text-sm text-navy-600">Every project includes a professional website or rebuild</p>
+                                            <h4 className="font-semibold text-navy-800">Proven Results</h4>
+                                            <p className="text-sm text-navy-600">Track record of delivering measurable business outcomes</p>
                                         </div>
                                     </div>
                                 </div>
