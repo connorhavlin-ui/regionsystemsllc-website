@@ -6,23 +6,20 @@ import { usePathname } from 'next/navigation'
 export default function ScrollAnimations() {
     const pathname = usePathname()
     const observerRef = useRef<IntersectionObserver | null>(null)
-    const initializedRef = useRef(false)
 
     useEffect(() => {
-        // Reset initialization flag on route change
-        initializedRef.current = false
+        // Clean up existing observer
+        if (observerRef.current) {
+            observerRef.current.disconnect()
+        }
 
-        // Small delay to ensure DOM is fully rendered
+        // Wait for page to be fully rendered
         const timer = setTimeout(() => {
-            if (!initializedRef.current) {
-                initScrollAnimations()
-                initializedRef.current = true
-            }
-        }, 100)
+            initScrollAnimations()
+        }, 200)
 
         return () => {
             clearTimeout(timer)
-            // Clean up observer on unmount
             if (observerRef.current) {
                 observerRef.current.disconnect()
                 observerRef.current = null
@@ -31,11 +28,6 @@ export default function ScrollAnimations() {
     }, [pathname])
 
     const initScrollAnimations = () => {
-        // Clean up existing observer
-        if (observerRef.current) {
-            observerRef.current.disconnect()
-        }
-
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -56,6 +48,5 @@ export default function ScrollAnimations() {
         })
     }
 
-    // This component doesn't render anything visible
     return null
 }

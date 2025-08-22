@@ -1,113 +1,187 @@
 import Link from 'next/link'
+import ScheduleButton from '@/components/ScheduleButton'
+import {
+    CheckCircle,
+    Star,
+    Zap,
+    Target,
+    Bot,
+    Gift
+} from 'lucide-react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Pricing - AI & Automation Services | Region Systems LLC | Indiana',
+    description: 'Transparent pricing for AI consulting and automation services in Indiana. Every project includes a free website. Starts at $249 for automation audit.',
+    keywords: 'AI consulting pricing, automation services pricing, Indiana automation costs, free website with automation, automation audit pricing',
+}
 
 export default function Pricing() {
     const plans = [
         {
             name: 'Automation Audit — Starts at $249',
-            description: 'One-hour audit to map time sinks and failure points, with a prioritized action list.',
+            description: 'Comprehensive assessment of your current processes to identify automation opportunities.',
+            price: 'Starts at $249',
             features: [
-                'Process review & goals',
-                'Opportunity matrix + ROI estimates',
-                '1-page action plan (next steps)',
-                'Free website or website rebuild included',
+                'Process analysis & documentation',
+                'Automation opportunity identification',
+                'ROI calculation & business case',
+                'Implementation roadmap',
+                'Free website or website rebuild included'
             ],
+            popular: false,
+            icon: Target
         },
         {
-            name: 'Starter Automation — Starts at $749',
-            description: 'One focused workflow automation or integration to quickly remove manual work.',
+            name: 'Process Automation — Starts at $1,500',
+            description: 'End-to-end automation solution for your most impactful business processes.',
+            price: 'Starts at $1,500',
             features: [
-                'Implementation & testing',
-                'Documentation & handoff',
-                'Lightweight monitoring',
-                'Free website or website rebuild included',
+                'Workflow design & optimization',
+                'Custom automation development',
+                'System integration setup',
+                'User training & documentation',
+                '30 days of support',
+                'Free website or website rebuild included'
             ],
+            popular: true,
+            icon: Zap
         },
         {
-            name: 'Growth Bundle — Starts at $1,950',
-            description: 'Multi-workflow system with integrations, error handling, and dashboards.',
+            name: 'AI Strategy & Implementation — Starts at $5,000',
+            description: 'Complete AI transformation with custom solutions and ongoing optimization.',
+            price: 'Starts at $5,000',
             features: [
-                'End-to-end delivery',
-                'Monitoring & alerting',
-                'SOPs & handoff',
-                'Free website or website rebuild included',
+                'AI readiness assessment',
+                'Custom AI solution development',
+                'Data pipeline setup',
+                'Model training & deployment',
+                'Performance monitoring',
+                '6 months of support',
+                'Free website or website rebuild included'
             ],
-        },
+            popular: false,
+            icon: Bot
+        }
     ]
 
     return (
-        <section className="pt-32 pb-16 has-soft-mesh">
-            <div className="container-custom">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-4">Pricing</h1>
-                    <p className="text-navy-600 max-w-2xl mx-auto">Productized anchors with clear deliverables. Contact for a tailored quote based on scope. Indiana SMBs only.</p>
-                </div>
+        <>
+            {/* Hero Section */}
+            <section className="pt-32 pb-16 has-soft-mesh">
+                <div className="container-custom text-center">
+                    <div className="max-w-4xl mx-auto">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6">
+                            Transparent Pricing
+                        </h1>
+                        <p className="text-xl text-navy-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                            Clear, upfront pricing for all our AI and automation services.
+                            No hidden fees, no surprises—just results that transform your business.
+                        </p>
 
-                {/* Free Website Offer Banner */}
-                <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 mb-12 border border-accent-200">
-                    <div className="text-center">
-                        <h2 className="text-2xl font-bold text-navy-900 mb-3">
-                            🎁 Special Offer: Free Website with Every Project
+                        <p className="text-lg text-navy-700 mb-8">
+                            Serving all of Indiana: West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, Bloomington, and beyond.
+                        </p>
+
+                        {/* Free Website Offer Banner */}
+                        <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 inline-block border border-accent-200 mb-8">
+                            <div className="flex items-center space-x-3">
+                                <Gift className="h-6 w-6 text-accent-600" />
+                                <div className="text-left">
+                                    <h3 className="text-lg font-semibold text-navy-800">
+                                        🎁 Every Project Includes a Free Website
+                                    </h3>
+                                    <p className="text-navy-700 text-sm">
+                                        Professional website or complete rebuild at no additional cost
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Pricing Plans */}
+            <section className="section-padding bg-white">
+                <div className="container-custom">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
+                            Choose Your Plan
                         </h2>
-                        <p className="text-navy-700 text-lg">
-                            Every automation project includes a professional website or complete website rebuild at no additional cost.
+                        <p className="text-xl text-navy-600 max-w-3xl mx-auto">
+                            From quick automation audits to full AI transformation, we have a solution
+                            that fits your needs and budget.
                         </p>
                     </div>
-                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {plans.map((plan, index) => (
-                        <div key={plan.name} className="bg-white rounded-xl p-6 border border-navy-100 shadow-lg">
-                            <h2 className="text-xl font-semibold text-navy-900 mb-2">{plan.name}</h2>
-                            <p className="text-navy-600 mb-4">{plan.description}</p>
-                            <ul className="space-y-2 mb-6">
-                                {plan.features.map((f) => (
-                                    <li key={f} className="text-sm text-navy-700">• {f}</li>
-                                ))}
-                            </ul>
-                            <div className="flex flex-col space-y-2">
-                                <Link href="/contact" className="btn-primary w-full inline-block text-center">Schedule Consultation</Link>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        {plans.map((plan, index) => (
+                            <div
+                                key={plan.name}
+                                className={`relative bg-white rounded-xl p-8 shadow-lg border-2 transition-all duration-300 hover:shadow-xl ${plan.popular
+                                        ? 'border-accent-500 shadow-xl scale-105'
+                                        : 'border-navy-100 hover:border-accent-300'
+                                    } animate-on-scroll`}
+                                data-animation-delay={index * 200}
+                            >
+                                {plan.popular && (
+                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                                        <div className="bg-accent-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2">
+                                            <Star className="h-4 w-4" />
+                                            <span>Most Popular</span>
+                                        </div>
+                                    </div>
+                                )}
 
-                {/* Additional Information */}
-                <div className="mt-16 text-center">
-                    <div className="bg-white rounded-xl p-8 border border-navy-100 shadow-lg">
-                        <h3 className="text-2xl font-bold text-navy-900 mb-4">What's Included in Every Project</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                            <div>
-                                <h4 className="text-lg font-semibold text-navy-800 mb-3">Automation Services</h4>
-                                <ul className="space-y-2 text-navy-600">
-                                    <li>• Custom workflow design</li>
-                                    <li>• System integration</li>
-                                    <li>• Testing & deployment</li>
-                                    <li>• Documentation & training</li>
+                                <div className="text-center mb-8">
+                                    <div className="p-3 bg-accent-100 rounded-lg w-fit mx-auto mb-4">
+                                        <plan.icon className="h-8 w-8 text-accent-600" />
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                                        {plan.name}
+                                    </h3>
+                                    <p className="text-navy-600 mb-6 leading-relaxed">
+                                        {plan.description}
+                                    </p>
+                                    <div className="text-3xl font-bold text-navy-900 mb-2">
+                                        {plan.price}
+                                    </div>
+                                </div>
+
+                                <ul className="space-y-3 mb-8">
+                                    {plan.features.map((feature) => (
+                                        <li key={feature} className="flex items-start space-x-3">
+                                            <CheckCircle className="h-5 w-5 text-accent-600 mt-0.5 flex-shrink-0" />
+                                            <span className="text-navy-600 text-sm">{feature}</span>
+                                        </li>
+                                    ))}
                                 </ul>
+
+                                <ScheduleButton className="w-full" label="Schedule Consultation" />
                             </div>
-                            <div>
-                                <h4 className="text-lg font-semibold text-navy-800 mb-3">Bonus: Free Website</h4>
-                                <ul className="space-y-2 text-navy-600">
-                                    <li>• Professional website design</li>
-                                    <li>• Mobile-responsive layout</li>
-                                    <li>• SEO optimization</li>
-                                    <li>• Content management system</li>
-                                </ul>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
+            </section>
 
-                {/* CTA Section */}
-                <div className="mt-16 text-center">
-                    <h3 className="text-2xl font-bold text-navy-900 mb-4">Ready to Get Started?</h3>
-                    <p className="text-navy-600 mb-6">Contact us to discuss your specific needs and get a customized quote.</p>
-                    <Link href="/contact" className="btn-primary">
-                        Schedule a Free Consultation
-                    </Link>
+            {/* CTA Section */}
+            <section className="section-padding bg-gradient-to-r from-navy-800 to-navy-900 text-white">
+                <div className="container-custom text-center">
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                        Ready to Get Started?
+                    </h2>
+                    <p className="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+                        Let's discuss your automation needs and find the perfect solution for your business.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <ScheduleButton className="inline-flex bg-white text-navy-800 hover:bg-navy-50" label="Schedule Your Free Consultation" />
+                        <Link href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
+                            Get in Touch
+                        </Link>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 

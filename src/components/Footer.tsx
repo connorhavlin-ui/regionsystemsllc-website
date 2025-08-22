@@ -65,7 +65,7 @@ const Footer = () => {
                             </div>
                         </Link>
                         <p className="text-navy-300 mb-6 text-sm leading-relaxed">
-                            AI consulting and automation integration for small and mid-sized businesses in Indiana.
+                            AI consulting and automation integration for small and mid-sized businesses across Indiana.
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((social) => (
@@ -134,9 +134,10 @@ const Footer = () => {
                                 <MapPin className="h-5 w-5 text-accent-400 mt-0.5 flex-shrink-0" />
                                 <div>
                                     <p className="text-navy-300 text-sm">
-                                        Indiana (ET)<br />
+                                        Serving all of Indiana<br />
                                         West Lafayette, Indianapolis,<br />
-                                        Fort Wayne, Bloomington
+                                        Fort Wayne, Bloomington,<br />
+                                        Northwest Indiana & beyond
                                     </p>
                                 </div>
                             </div>

@@ -1,104 +1,89 @@
 import Link from 'next/link'
+import ScheduleButton from '@/components/ScheduleButton'
 import {
     Bot,
     Zap,
     Target,
-    GraduationCap,
-    BarChart3,
-    Database,
-    Cog,
-    Brain,
-    TrendingUp,
-    Shield,
-    Clock,
     CheckCircle,
     ArrowRight,
-    MessageSquare,
-    Lightbulb,
-    Settings,
-    LineChart,
-    Users,
-    FileText,
     Globe,
     Gift
 } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'AI & Automation Services - Region Systems LLC',
-    description: 'AI consulting and automation integration built around your processes. Strategy, implementation, and optimization by Region Systems LLC. Every project includes a free website.',
-    keywords: 'AI consulting, automation integration, machine learning, RPA, process automation, custom AI solutions, business intelligence, Indiana automation services, free website with automation',
+    title: 'AI & Automation Services | Region Systems LLC | Indiana',
+    description: 'Professional AI consulting, process automation, and custom solutions for Indiana businesses. Every project includes a free website. Save time and reduce errors.',
+    keywords: 'AI consulting Indiana, automation services Indiana, process automation, custom AI solutions, Indiana automation experts, free website with automation',
 }
 
 export default function Services() {
     const mainServices = [
         {
-            id: 'ai-consulting',
-            icon: Bot,
             title: 'AI Strategy & Consulting',
-            subtitle: 'Strategic AI roadmaps and implementation guidance',
-            description: 'Comprehensive AI assessment, strategy development, and roadmap creation to identify the best AI opportunities for your business.',
+            description: 'Strategic AI roadmaps, feasibility studies, and technology assessments to identify the best AI opportunities for your business.',
+            icon: Bot,
             features: [
                 'AI Readiness Assessment',
                 'Technology Roadmapping',
-                'ROI Analysis & Business Case',
-                'Risk Assessment & Mitigation',
-                'Change Management Strategy',
+                'ROI Analysis & Planning',
+                'Implementation Strategy',
                 'Vendor Selection Support'
             ],
-            benefits: [
-                'Clear AI implementation roadmap',
-                'Reduced implementation risks',
-                'Optimized technology investments',
-                'Accelerated time-to-value'
-            ],
             pricing: 'Starts at $2,500',
-            timeline: '4-6 weeks'
+            timeline: '2-4 weeks',
+            cta: 'Schedule Consultation'
         },
         {
-            id: 'automation',
+            title: 'Process Automation',
+            description: 'Streamline repetitive tasks with intelligent automation workflows that reduce errors and free up your team\'s time.',
             icon: Zap,
-            title: 'Automation Integration',
-            subtitle: 'End-to-end process automation solutions',
-            description: 'Complete automation solutions that streamline operations, reduce manual work, and improve accuracy across your organization.',
             features: [
-                'Process Discovery & Analysis',
-                'RPA Implementation',
-                'Workflow Automation',
-                'System Integration',
-                'Document Processing',
-                'API Development & Integration'
+                'Workflow Analysis & Design',
+                'Integration Setup',
+                'Custom Automation Scripts',
+                'Monitoring & Alerts',
+                'Ongoing Optimization'
             ],
-            benefits: [
-                'Significant reduction in manual tasks',
-                'Improved accuracy and consistency',
-                'Faster processing times'
-            ],
-            pricing: 'Starts at $749',
-            timeline: '2-4 weeks'
+            pricing: 'Starts at $1,500',
+            timeline: '1-3 weeks',
+            cta: 'Schedule Consultation'
         },
         {
-            id: 'custom-solutions',
-            icon: Target,
             title: 'Custom AI Solutions',
-            subtitle: 'Tailored AI applications for unique challenges',
-            description: 'Bespoke AI applications built specifically for your unique business challenges, from machine learning models to intelligent systems.',
+            description: 'Tailored AI applications designed to solve your specific business challenges and unlock new opportunities.',
+            icon: Target,
             features: [
-                'Machine Learning Models',
-                'Predictive Analytics',
-                'Natural Language Processing',
-                'Computer Vision',
-                'Intelligent Dashboards',
-                'Real-time Decision Systems'
-            ],
-            benefits: [
-                'Competitive advantage through unique AI',
-                'Seamless integration with existing systems',
-                'Scalable and maintainable solutions',
-                'Ongoing support and optimization'
+                'Custom AI Model Development',
+                'Data Pipeline Setup',
+                'API Integration',
+                'User Interface Design',
+                'Training & Documentation'
             ],
             pricing: 'Starts at $5,000',
-            timeline: '8-12 weeks'
+            timeline: '4-8 weeks',
+            cta: 'Schedule Consultation'
+        }
+    ]
+
+    const additionalServices = [
+        {
+            title: 'Data Analytics & Reporting',
+            description: 'Transform raw data into actionable insights with custom dashboards and automated reporting systems.',
+            icon: Target,
+            features: ['Custom Dashboards', 'Automated Reports', 'Performance Tracking', 'Data Visualization']
+        },
+        {
+            title: 'System Integration',
+            description: 'Connect your existing tools and platforms to create seamless workflows and eliminate data silos.',
+            icon: Zap,
+            features: ['API Development', 'Data Synchronization', 'Workflow Automation', 'Error Handling']
+        },
+        {
+            title: 'Ongoing Support & Maintenance',
+            description: 'Continuous monitoring, updates, and optimization to ensure your automation systems perform at their best.',
+            icon: Bot,
+            features: ['24/7 Monitoring', 'Performance Optimization', 'Security Updates', 'User Training']
         }
     ]
 
@@ -108,16 +93,26 @@ export default function Services() {
             <section className="pt-32 pb-16 has-soft-mesh">
                 <div className="container-custom text-center">
                     <div className="max-w-4xl mx-auto">
-                        <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-6">
+                        <div className="inline-flex items-center space-x-3 bg-accent-100 text-accent-800 px-6 py-3 rounded-full text-sm font-medium mb-8">
+                            <Globe className="h-5 w-5" />
+                            <span>Professional AI & Automation Services</span>
+                        </div>
+
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6">
                             AI & Automation Services
                         </h1>
-                        <p className="text-xl text-navy-600 mb-8 leading-relaxed">
-                            Comprehensive AI consulting and automation integration built around your processes.
-                            Strategy, implementation, and optimization by Region Systems LLC.
+
+                        <p className="text-xl text-navy-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                            We deliver comprehensive AI and automation solutions tailored to your business needs,
+                            from strategy to implementation and ongoing optimization.
+                        </p>
+
+                        <p className="text-lg text-navy-700 mb-8">
+                            Serving all of Indiana: West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, Bloomington, and beyond.
                         </p>
 
                         {/* Free Website Offer */}
-                        <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 mb-8 border border-accent-200 inline-block">
+                        <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 inline-block border border-accent-200 mb-8">
                             <div className="flex items-center space-x-3">
                                 <Gift className="h-6 w-6 text-accent-600" />
                                 <div className="text-left">
@@ -132,10 +127,8 @@ export default function Services() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/contact" className="btn-primary">
-                                Schedule a Consultation
-                            </Link>
-                            <Link href="/pricing" className="btn-outline">
+                            <ScheduleButton className="inline-flex" label="Schedule a Consultation" />
+                            <Link href="/pricing" className="btn-outline text-lg">
                                 View Pricing
                             </Link>
                         </div>
@@ -151,76 +144,49 @@ export default function Services() {
                             Our Core Services
                         </h2>
                         <p className="text-xl text-navy-600 max-w-3xl mx-auto">
-                            We deliver end-to-end solutions that transform your business operations through intelligent automation and AI.
+                            Comprehensive solutions designed to transform your business operations through intelligent automation.
                         </p>
                     </div>
 
-                    <div className="space-y-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {mainServices.map((service, index) => (
-                            <div key={service.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                                    <div className="p-4 bg-accent-100 rounded-xl w-fit mb-6">
-                                        <service.icon className="h-12 w-12 text-accent-600" />
-                                    </div>
-                                    <h3 className="text-3xl font-bold text-navy-900 mb-4">{service.title}</h3>
-                                    <p className="text-lg text-navy-600 mb-6 leading-relaxed">{service.description}</p>
+                            <div key={service.title} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 animate-on-scroll" data-animation-delay={index * 200}>
+                                <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
+                                    <service.icon className="h-8 w-8 text-accent-600" />
+                                </div>
 
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                                        <div>
-                                            <h4 className="font-semibold text-navy-800 mb-3">Features</h4>
-                                            <ul className="space-y-2">
-                                                {service.features.map((feature) => (
-                                                    <li key={feature} className="flex items-center space-x-2 text-navy-600">
-                                                        <CheckCircle className="h-4 w-4 text-accent-600 flex-shrink-0" />
-                                                        <span className="text-sm">{feature}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h4 className="font-semibold text-navy-800 mb-3">Benefits</h4>
-                                            <ul className="space-y-2">
-                                                {service.benefits.map((benefit) => (
-                                                    <li key={benefit} className="flex items-center space-x-2 text-navy-600">
-                                                        <CheckCircle className="h-4 w-4 text-accent-600 flex-shrink-0" />
-                                                        <span className="text-sm">{benefit}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    </div>
+                                <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                                    {service.title}
+                                </h3>
 
-                                    <div className="flex flex-col sm:flex-row gap-4">
-                                        <Link href="/contact" className="btn-primary">
-                                            Get Started
-                                        </Link>
-                                        <Link href="/pricing" className="btn-outline">
-                                            View Pricing
-                                        </Link>
+                                <p className="text-navy-600 mb-6 leading-relaxed">
+                                    {service.description}
+                                </p>
+
+                                <div className="mb-6">
+                                    <h4 className="font-semibold text-navy-800 mb-3">What's Included</h4>
+                                    <ul className="space-y-2">
+                                        {service.features.map((feature) => (
+                                            <li key={feature} className="flex items-center space-x-2">
+                                                <CheckCircle className="h-4 w-4 text-accent-600" />
+                                                <span className="text-sm text-navy-600">{feature}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="border-t border-navy-100 pt-4 mb-6">
+                                    <div className="flex justify-between items-center text-sm">
+                                        <span className="text-navy-600">Starting Price:</span>
+                                        <span className="font-semibold text-navy-800">{service.pricing}</span>
+                                    </div>
+                                    <div className="flex justify-between items-center text-sm mt-2">
+                                        <span className="text-navy-600">Timeline:</span>
+                                        <span className="font-semibold text-navy-800">{service.timeline}</span>
                                     </div>
                                 </div>
 
-                                <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                                    <div className="bg-gradient-to-br from-navy-50 to-accent-50 rounded-2xl p-8 border border-navy-100">
-                                        <div className="text-center">
-                                            <h4 className="text-xl font-semibold text-navy-800 mb-4">Project Details</h4>
-                                            <div className="space-y-4">
-                                                <div className="bg-white rounded-lg p-4 border border-navy-100">
-                                                    <div className="text-2xl font-bold text-accent-600">{service.pricing}</div>
-                                                    <div className="text-sm text-navy-600">Investment</div>
-                                                </div>
-                                                <div className="bg-white rounded-lg p-4 border border-navy-100">
-                                                    <div className="text-2xl font-bold text-navy-600">{service.timeline}</div>
-                                                    <div className="text-sm text-navy-600">Timeline</div>
-                                                </div>
-                                                <div className="bg-accent-100 rounded-lg p-4 border border-accent-200">
-                                                    <div className="text-lg font-semibold text-accent-800">🎁 Free Website Included</div>
-                                                    <div className="text-sm text-accent-700">Professional website or rebuild</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <ScheduleButton className="w-full" label={service.cta} />
                             </div>
                         ))}
                     </div>
@@ -235,48 +201,33 @@ export default function Services() {
                             Additional Services
                         </h2>
                         <p className="text-xl text-navy-600 max-w-3xl mx-auto">
-                            Specialized solutions to complement your automation and AI initiatives.
+                            Specialized solutions to complement your core automation initiatives.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[
-                            {
-                                icon: GraduationCap,
-                                title: 'Training & Support',
-                                description: 'Comprehensive training programs and ongoing support to ensure your team maximizes the value of your automation solutions.',
-                                features: ['User training', 'Documentation', 'Ongoing support', 'Best practices']
-                            },
-                            {
-                                icon: BarChart3,
-                                title: 'Performance Analytics',
-                                description: 'Advanced analytics and reporting to measure the impact and ROI of your automation investments.',
-                                features: ['KPI tracking', 'ROI analysis', 'Performance reports', 'Optimization insights']
-                            },
-                            {
-                                icon: Database,
-                                title: 'Data Migration',
-                                description: 'Seamless data migration and integration services to ensure your automation systems work with your existing data.',
-                                features: ['Data mapping', 'ETL processes', 'Validation', 'Testing']
-                            }
-                        ].map((service, index) => (
-                            <div key={service.title} className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
-                                <div className="p-3 bg-navy-100 rounded-lg w-fit mb-6">
-                                    <service.icon className="h-8 w-8 text-navy-700" />
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {additionalServices.map((service, index) => (
+                            <div key={service.title} className="bg-white rounded-xl p-6 shadow-lg border border-navy-100 animate-on-scroll" data-animation-delay={index * 200}>
+                                <div className="p-3 bg-navy-100 rounded-lg w-fit mb-4">
+                                    <service.icon className="h-6 w-6 text-navy-700" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-navy-900 mb-4">{service.title}</h3>
-                                <p className="text-navy-600 mb-6 leading-relaxed">{service.description}</p>
-                                <ul className="space-y-2 mb-6">
+
+                                <h3 className="text-lg font-semibold text-navy-900 mb-3">
+                                    {service.title}
+                                </h3>
+
+                                <p className="text-navy-600 mb-4 text-sm leading-relaxed">
+                                    {service.description}
+                                </p>
+
+                                <ul className="space-y-2">
                                     {service.features.map((feature) => (
-                                        <li key={feature} className="flex items-center space-x-2 text-sm text-navy-600">
-                                            <CheckCircle className="h-4 w-4 text-accent-600" />
-                                            <span>{feature}</span>
+                                        <li key={feature} className="flex items-center space-x-2">
+                                            <CheckCircle className="h-3 w-3 text-accent-600" />
+                                            <span className="text-xs text-navy-600">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
-                                <Link href="/contact" className="btn-outline w-full text-center">
-                                    Learn More
-                                </Link>
                             </div>
                         ))}
                     </div>
@@ -290,14 +241,12 @@ export default function Services() {
                         Ready to Get Started?
                     </h2>
                     <p className="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
-                        Let's discuss how our AI and automation services can transform your business operations.
+                        Let's discuss how our AI and automation expertise can transform your business operations.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/contact" className="btn-primary bg-white text-navy-800 hover:bg-navy-50">
-                            Schedule a Consultation
-                        </Link>
-                        <Link href="/pricing" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
-                            View Pricing
+                        <ScheduleButton className="inline-flex bg-white text-navy-800 hover:bg-navy-50" label="Schedule Your Free Consultation" />
+                        <Link href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
+                            Get in Touch
                         </Link>
                     </div>
                 </div>

@@ -87,7 +87,7 @@ export default function Home() {
             <section className="py-16 bg-white border-b border-navy-100">
                 <div className="container-custom text-center">
                     <p className="text-lg text-navy-700">
-                        Proudly serving Indiana (ET): West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, and Bloomington.
+                        Proudly serving all of Indiana: West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, Bloomington, and beyond.
                     </p>
                 </div>
             </section>
@@ -107,7 +107,7 @@ export default function Home() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* AI Consulting */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 animate-on-scroll" data-animation-delay="0">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Bot className="h-8 w-8 text-accent-600" />
                             </div>
@@ -138,7 +138,7 @@ export default function Home() {
                         </div>
 
                         {/* Process Automation */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 animate-on-scroll" data-animation-delay="200">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Zap className="h-8 w-8 text-accent-600" />
                             </div>
@@ -169,7 +169,7 @@ export default function Home() {
                         </div>
 
                         {/* Data Analytics */}
-                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg card-hover border border-navy-100 animate-on-scroll" data-animation-delay="400">
                             <div className="p-3 bg-accent-100 rounded-lg w-fit mb-6">
                                 <Target className="h-8 w-8 text-accent-600" />
                             </div>
@@ -215,7 +215,7 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="text-center">
+                        <div className="text-center animate-on-scroll" data-animation-delay="0">
                             <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
                                 <Shield className="h-8 w-8 text-navy-700" />
                             </div>
@@ -223,7 +223,7 @@ export default function Home() {
                             <p className="text-navy-600 text-sm">Indiana-based team with deep understanding of local business needs.</p>
                         </div>
 
-                        <div className="text-center">
+                        <div className="text-center animate-on-scroll" data-animation-delay="200">
                             <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
                                 <Zap className="h-8 w-8 text-accent-600" />
                             </div>
@@ -231,7 +231,7 @@ export default function Home() {
                             <p className="text-navy-600 text-sm">Quick turnaround times with proven automation frameworks.</p>
                         </div>
 
-                        <div className="text-center">
+                        <div className="text-center animate-on-scroll" data-animation-delay="400">
                             <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
                                 <MessageSquare className="h-8 w-8 text-navy-700" />
                             </div>
@@ -239,7 +239,7 @@ export default function Home() {
                             <p className="text-navy-600 text-sm">Continuous monitoring and support to ensure optimal performance.</p>
                         </div>
 
-                        <div className="text-center">
+                        <div className="text-center animate-on-scroll" data-animation-delay="600">
                             <div className="p-4 bg-accent-100 rounded-full w-fit mx-auto mb-4">
                                 <Globe className="h-8 w-8 text-accent-600" />
                             </div>
