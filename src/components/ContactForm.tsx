@@ -249,14 +249,12 @@ export default function ContactForm() {
                             <div className="mt-8 p-6 bg-navy-50 rounded-xl border border-navy-100">
                                 <h3 className="font-semibold text-navy-900 mb-3 flex items-center space-x-2">
                                     <Calendar className="h-5 w-5 text-accent-600" />
-                                    <span>Schedule a Call</span>
+                                    <span>Schedule your Free Consultation Now!</span>
                                 </h3>
                                 <p className="text-sm text-navy-600 mb-4">
-                                    Prefer to speak directly? Schedule a 30‑minute consultation call (Google Calendar).
+                                    Ready to talk? Use our contact page to schedule your free consultation.
                                 </p>
-                                <div className="aspect-[16/9] w-full">
-                                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ20YP2CwfwV9ha5U4udJfhgdck5hSLEANzt3UaMFcTTco4Y-sK-y4SNnh9fEZZUm2dBVzlJOGdv?gv=true" style={{ border: 0 }} width="100%" height={600} frameBorder={0}></iframe>
-                                </div>
+                                <a href="/contact" className="btn-primary">Go to Contact</a>
                             </div>
                         </div>
 

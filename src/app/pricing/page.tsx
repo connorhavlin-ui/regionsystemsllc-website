@@ -11,17 +11,17 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Pricing - AI & Automation Services | Region Systems LLC | Indiana',
-    description: 'Transparent pricing for AI consulting and automation services in Indiana. Every project includes a free website. Starts at $249 for automation audit.',
-    keywords: 'AI consulting pricing, automation services pricing, Indiana automation costs, free website with automation, automation audit pricing',
+    title: 'Pricing - AI & Automation Services | Region Systems LLC | United States',
+    description: 'Transparent pricing for AI consulting and automation services across the United States. Based in Indiana. Every project includes a free website. Minimum engagement $500.',
+    keywords: 'AI consulting pricing, automation services pricing, US automation costs, free website with automation, minimum engagement $500',
 }
 
 export default function Pricing() {
     const plans = [
         {
-            name: 'Automation Audit — Starts at $249',
+            name: 'Automation Audit — Starts at $500',
             description: 'Comprehensive assessment of your current processes to identify automation opportunities.',
-            price: 'Starts at $249',
+            price: 'Starts at $500',
             features: [
                 'Process analysis & documentation',
                 'Automation opportunity identification',
@@ -92,7 +92,7 @@ export default function Pricing() {
                                         🎁 Every Project Includes a Free Website
                                     </h3>
                                     <p className="text-navy-700 text-sm">
-                                        Professional website or complete rebuild at no additional cost
+                                        Available with every engagement
                                     </p>
                                 </div>
                             </div>
@@ -119,8 +119,8 @@ export default function Pricing() {
                             <div
                                 key={plan.name}
                                 className={`relative bg-white rounded-xl p-8 shadow-lg border-2 transition-all duration-300 hover:shadow-xl ${plan.popular
-                                        ? 'border-accent-500 shadow-xl scale-105'
-                                        : 'border-navy-100 hover:border-accent-300'
+                                    ? 'border-accent-500 shadow-xl scale-105'
+                                    : 'border-navy-100 hover:border-accent-300'
                                     } animate-on-scroll`}
                                 data-animation-delay={index * 200}
                             >
@@ -157,7 +157,7 @@ export default function Pricing() {
                                     ))}
                                 </ul>
 
-                                <ScheduleButton className="w-full" label="Schedule Consultation" />
+                                <ScheduleButton className="w-full" />
                             </div>
                         ))}
                     </div>
@@ -174,10 +174,7 @@ export default function Pricing() {
                         Let's discuss your automation needs and find the perfect solution for your business.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <ScheduleButton className="inline-flex bg-white text-navy-800 hover:bg-navy-50" label="Schedule Your Free Consultation" />
-                        <Link href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
-                            Get in Touch
-                        </Link>
+                        <ScheduleButton className="inline-flex bg-white text-navy-800 hover:bg-navy-50" />
                     </div>
                 </div>
             </section>

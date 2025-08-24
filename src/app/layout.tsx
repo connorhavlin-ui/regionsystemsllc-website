@@ -8,16 +8,16 @@ import ScrollAnimations from '@/components/ScrollAnimations'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'Region Systems LLC - AI & Automation Services | Indiana',
-    description: 'AI consulting and automation integration services in Indiana. Transform your business with AI strategy, process automation, and custom solutions. Every project includes a free website.',
-    keywords: 'AI consulting, automation services, Indiana, business automation, AI strategy, process optimization, free website, Region Systems',
+    title: 'Region Systems LLC - AI & Automation Services | United States',
+    description: 'AI consulting and automation integration services across the United States. Based in Indiana. Transform your business with AI strategy, process automation, and custom solutions. Every project includes a free website.',
+    keywords: 'AI consulting, automation services, United States, business automation, AI strategy, process optimization, free website, Region Systems, Indiana-based',
     authors: [{ name: 'Region Systems LLC' }],
     creator: 'Region Systems LLC',
     publisher: 'Region Systems LLC',
     robots: 'index, follow',
     openGraph: {
         title: 'Region Systems LLC - AI & Automation Services',
-        description: 'AI consulting and automation integration services in Indiana. Every project includes a free website.',
+        description: 'AI consulting and automation integration services across the United States. Based in Indiana. Every project includes a free website.',
         url: 'https://regionsystems.com',
         siteName: 'Region Systems LLC',
         locale: 'en_US',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Region Systems LLC - AI & Automation Services',
-        description: 'AI consulting and automation integration services in Indiana. Every project includes a free website.',
+        description: 'AI consulting and automation integration services across the United States. Based in Indiana. Every project includes a free website.',
     },
     alternates: {
         canonical: 'https://regionsystems.com',
@@ -51,7 +51,7 @@ export default function RootLayout({
                             "name": "Region Systems LLC",
                             "url": "https://regionsystems.com",
                             "logo": "https://regionsystems.com/logo.png",
-                            "description": "AI consulting and automation integration services in Indiana. Every project includes a free website.",
+                            "description": "AI consulting and automation integration services across the United States. Based in Indiana. Every project includes a free website.",
                             "address": {
                                 "@type": "PostalAddress",
                                 "addressRegion": "Indiana",
@@ -67,15 +67,7 @@ export default function RootLayout({
                                 "https://linkedin.com/company/regionsystems",
                                 "https://twitter.com/regionsystems"
                             ],
-                            "serviceArea": {
-                                "@type": "GeoCircle",
-                                "geoMidpoint": {
-                                    "@type": "GeoCoordinates",
-                                    "latitude": 39.8283,
-                                    "longitude": -86.7994
-                                },
-                                "geoRadius": "200000"
-                            },
+                            "areaServed": "US",
                             "hasOfferCatalog": {
                                 "@type": "OfferCatalog",
                                 "name": "AI & Automation Services",

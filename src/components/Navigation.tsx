@@ -32,14 +32,6 @@ const Navigation = () => {
 
     return (
         <>
-            {/* Free Website Offer Banner */}
-            <div className="bg-gradient-to-r from-accent-600 to-navy-700 text-white text-center py-2 px-4 text-sm font-medium">
-                <div className="flex items-center justify-center space-x-2">
-                    <Gift className="h-4 w-4" />
-                    <span>🎁 Every Project Includes a Free Website!</span>
-                </div>
-            </div>
-
             <nav
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
                     ? 'bg-white/95 backdrop-blur-sm shadow-lg'
@@ -80,7 +72,7 @@ const Navigation = () => {
                                 href="/contact"
                                 className="btn-primary text-sm hover:scale-105 transition-transform duration-200"
                             >
-                                Get Started
+                                Schedule your Free Consultation Now!
                             </Link>
                         </div>
 
@@ -121,7 +113,7 @@ const Navigation = () => {
                                     onClick={() => setIsOpen(false)}
                                     className="btn-primary w-full text-center"
                                 >
-                                    Get Started
+                                    Schedule your Free Consultation Now!
                                 </Link>
                             </div>
                         </div>

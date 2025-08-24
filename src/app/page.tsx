@@ -29,15 +29,15 @@ export default function Home() {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
-                                Region Systems LLC — Indiana AI & Automation
+                                Region Systems LLC — AI & Automation Nationwide (US)
                             </h1>
 
                             <p className="text-xl text-navy-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-                                Save hours every week, cut manual errors, and speed up response times. We design practical AI and automation systems for Indiana small and mid‑sized businesses.
+                                Save hours every week, cut manual errors, and speed up response times. We design practical AI and automation systems for US small and mid‑sized businesses. Based in Indiana.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <ScheduleButton className="inline-flex" label="Schedule a Call" />
+                                <ScheduleButton className="inline-flex" />
                                 <Link
                                     href="/services"
                                     className="btn-outline text-lg"
@@ -83,11 +83,11 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Indiana Coverage Blurb */}
+            {/* Coverage Blurb */}
             <section className="py-16 bg-white border-b border-navy-100">
                 <div className="container-custom text-center">
                     <p className="text-lg text-navy-700">
-                        Proudly serving all of Indiana: West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, Bloomington, and beyond.
+                        Proudly serving businesses nationwide (US). Based in Indiana.
                     </p>
                 </div>
             </section>
@@ -219,8 +219,8 @@ export default function Home() {
                             <div className="p-4 bg-navy-100 rounded-full w-fit mx-auto mb-4">
                                 <Shield className="h-8 w-8 text-navy-700" />
                             </div>
-                            <h3 className="text-lg font-semibold text-navy-900 mb-2">Local Expertise</h3>
-                            <p className="text-navy-600 text-sm">Indiana-based team with deep understanding of local business needs.</p>
+                            <h3 className="text-lg font-semibold text-navy-900 mb-2">Nationwide + Local Roots</h3>
+                            <p className="text-navy-600 text-sm">Serving the US, headquartered in Indiana.</p>
                         </div>
 
                         <div className="text-center animate-on-scroll" data-animation-delay="200">
@@ -260,10 +260,7 @@ export default function Home() {
                         Let's discuss how AI and automation can streamline your operations and boost your bottom line.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <ScheduleButton className="inline-flex" label="Schedule Your Free Consultation" />
-                        <Link href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
-                            Get in Touch
-                        </Link>
+                        <ScheduleButton className="inline-flex" />
                     </div>
                 </div>
             </section>

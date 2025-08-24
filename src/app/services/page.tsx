@@ -12,9 +12,9 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'AI & Automation Services | Region Systems LLC | Indiana',
-    description: 'Professional AI consulting, process automation, and custom solutions for Indiana businesses. Every project includes a free website. Save time and reduce errors.',
-    keywords: 'AI consulting Indiana, automation services Indiana, process automation, custom AI solutions, Indiana automation experts, free website with automation',
+    title: 'AI & Automation Services | Region Systems LLC | United States',
+    description: 'Professional AI consulting, process automation, and custom solutions for US businesses. Based in Indiana. Every project includes a free website. Save time and reduce errors.',
+    keywords: 'AI consulting United States, automation services US, process automation, custom AI solutions, free website with automation, Indiana-based',
 }
 
 export default function Services() {
@@ -108,26 +108,14 @@ export default function Services() {
                         </p>
 
                         <p className="text-lg text-navy-700 mb-8">
-                            Serving all of Indiana: West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, Bloomington, and beyond.
+                            Serving businesses nationwide (US). Based in Indiana.
                         </p>
 
                         {/* Free Website Offer */}
-                        <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 inline-block border border-accent-200 mb-8">
-                            <div className="flex items-center space-x-3">
-                                <Gift className="h-6 w-6 text-accent-600" />
-                                <div className="text-left">
-                                    <h3 className="text-lg font-semibold text-navy-800">
-                                        🎁 Every Project Includes a Free Website
-                                    </h3>
-                                    <p className="text-navy-700 text-sm">
-                                        Get a professional website or complete rebuild at no additional cost
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {/* Free Website Offer intentionally removed here per requirement */}
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <ScheduleButton className="inline-flex" label="Schedule a Consultation" />
+                            <ScheduleButton className="inline-flex" />
                             <Link href="/pricing" className="btn-outline text-lg">
                                 View Pricing
                             </Link>
@@ -244,10 +232,7 @@ export default function Services() {
                         Let's discuss how our AI and automation expertise can transform your business operations.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <ScheduleButton className="inline-flex bg-white text-navy-800 hover:bg-navy-50" label="Schedule Your Free Consultation" />
-                        <Link href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
-                            Get in Touch
-                        </Link>
+                        <ScheduleButton className="inline-flex bg-white text-navy-800 hover:bg-navy-50" />
                     </div>
                 </div>
             </section>

@@ -17,9 +17,9 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About Region Systems LLC - AI & Automation Services | Indiana',
-    description: 'Learn about Region Systems LLC, Indiana-based AI and automation experts. We help businesses save time and reduce errors with practical solutions. Every project includes a free website.',
-    keywords: 'About Region Systems, AI consulting Indiana, automation services Indiana, Indiana automation experts, free website with automation',
+    title: 'About Region Systems LLC - AI & Automation Services | United States',
+    description: 'Learn about Region Systems LLC, US-wide AI and automation partner based in Indiana. We help businesses save time and reduce errors with practical solutions. Every project includes a free website.',
+    keywords: 'About Region Systems, AI consulting United States, automation services US, free website with automation, Indiana-based',
 }
 
 export default function About() {
@@ -84,7 +84,7 @@ export default function About() {
                             We're a team of AI experts, automation specialists, and business strategists
                             dedicated to transforming how businesses operate through intelligent technology solutions.
                         </p>
-                        <p className="text-navy-600 mb-8">Serving all of Indiana: West Lafayette, Northwest Indiana, Indianapolis, Fort Wayne, Bloomington, and beyond.</p>
+                        <p className="text-navy-600 mb-8">Serving businesses nationwide (US). Based in Indiana.</p>
 
                         {/* Free Website Offer */}
                         <div className="bg-gradient-to-r from-accent-50 to-navy-50 rounded-xl p-6 inline-block border border-accent-200">
@@ -123,7 +123,7 @@ export default function About() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact" className="btn-primary">
-                                    Get Started
+                                    Schedule your Free Consultation Now!
                                 </Link>
                                 <Link href="/services" className="btn-outline">
                                     Our Services
@@ -138,8 +138,8 @@ export default function About() {
                                     <div className="flex items-start space-x-3">
                                         <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-navy-800">Local Expertise</h4>
-                                            <p className="text-sm text-navy-600">Indiana-based with deep understanding of local business needs</p>
+                                            <h4 className="font-semibold text-navy-800">Nationwide + Local Roots</h4>
+                                            <p className="text-sm text-navy-600">US coverage with Indiana headquarters</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start space-x-3">
@@ -249,7 +249,7 @@ export default function About() {
                             Our Journey
                         </h2>
                         <p className="text-xl text-navy-600 max-w-3xl mx-auto">
-                            Key milestones in our mission to bring AI and automation to Indiana businesses.
+                            Key milestones in our mission to bring AI and automation to US businesses.
                         </p>
                     </div>
 
@@ -283,7 +283,7 @@ export default function About() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact" className="btn-primary bg-white text-navy-800 hover:bg-navy-50">
-                            Schedule a Consultation
+                            Schedule your Free Consultation Now!
                         </Link>
                         <Link href="/services" className="btn-outline border-white text-white hover:bg-white hover:text-navy-800">
                             View Services
